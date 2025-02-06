@@ -1,3 +1,7 @@
+:root {
+    --cor-hover: white
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +15,14 @@ ul, ol, li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+header {
+    background-color: #e0e8f3;
+}
+
+main {
+    margin-top: 10vh;
 }
 
 .menu {
@@ -31,9 +43,89 @@ a {
 }
 
 .menu li:hover {
-    background-color: red;
+    background-color: var(--cor-hover)
 }
 
 .menu img {
     height: 16px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card-border {
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(to right, #ff6600, #ffcc00);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 10px 0;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    border-color: #e65c00;
+    margin-top: 20px;
+}
+
+.product-card h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.sizes {
+    margin: 10px 0;
+}
+
+.sizes span {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sizes span:hover {
+    background: #bbb;
+}
+
+.buy-button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-button:hover {
+    background: #e65c00;
 }
